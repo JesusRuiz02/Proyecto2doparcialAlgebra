@@ -22,13 +22,17 @@ public class Productopunto : MonoBehaviour
     {
         distancia = Vector3.Distance(cubeenemigo.transform.position, transform.position);
         Debug.DrawRay(transform.position, transform.forward.normalized*15, lineColor);
-        ppunto = Vector3.Dot(transform.right.normalized,cubeenemigo.transform.right.normalized);
-       
+        ppunto = Vector3.Dot(transform.forward.normalized,cubeenemigo.transform.forward.normalized);
+
+       // if (ppunto < -.8f)
+        //{
+           // GetComponent<Renderer>().material.color=Color.red;
+      //  }
         // if (distancia<3)
-        // {
-        //      GetComponent<Renderer>.material.color()=Color.red;
-        // }
-    }
+     //   {
+            // GetComponent<Renderer>.material.color()=Color.red;
+            // }
+        }
     
   
 }

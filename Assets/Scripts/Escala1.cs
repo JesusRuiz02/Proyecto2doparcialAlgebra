@@ -17,7 +17,7 @@ public class Escala1 : MonoBehaviour
     {
         if (productopunto.distancia<3)
         {
-        // GetComponent<Renderer>.material.color()=Color.red;
+         GetComponent<Renderer>().material.color=Color.red;
         }
     }
 }

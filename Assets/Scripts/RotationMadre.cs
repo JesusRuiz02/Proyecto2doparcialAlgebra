@@ -15,9 +15,9 @@ public class RotationMadre : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(productopunto.distancia<4)
-        {
-            transform.Rotate(1, 0, 0);
-        }
+      //  if(productopunto.distancia<.-8f)
+       // {
+       //     transform.Rotate(1, 0, 0);
+       // }
     }
 }
