@@ -5,10 +5,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    private float horizontalinput;
-    private float verticalinput;
+    private float horizontalinput=1;
+    private float verticalinput=1;
     private Vector3 mousePosition;
-
     public float speed=4;
     // Start is called before the first frame update
     void Start()
@@ -19,29 +18,30 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalinput = Input.GetAxis("Horizontal");
-        verticalinput = Input.GetAxis("Vertical");
-        
-        this.transform.Translate(speed*Time.deltaTime*Vector3.right*horizontalinput);
-        this.transform.Translate(speed*Time.deltaTime*Vector3.forward*verticalinput);
-        /*if (Input.GetMouseButton(1))
+        if (Input.GetKey(KeyCode.W))
         {
+            this.transform.Translate (speed * Time.deltaTime * Vector3.forward * verticalinput);
 
-            mousePosition = Input.mousePosition;
-            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-            transform.Rotate(0,,mousePosition.z);
         }
-        //rotacion*/
-        //Get the Screen positions of the object
-        Vector2 positionOnScreen = Camera.main.WorldToViewportPoint (transform.position);
-         
-        //Get the Screen position of the mouse
+        /*if (Input.GetKey(KeyCode.A))
+        {
+            this.transform.Translate (speed * Time.deltaTime * Vector3.right * -horizontalinput);
+
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            this.transform.Translate (speed * Time.deltaTime * Vector3.forward * -verticalinput);
+
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            this.transform.Translate(speed * Time.deltaTime * Vector3.right * horizontalinput);
+
+        }*/
+        
+        Vector2 positionOnScreen = Camera.main.WorldToViewportPoint (transform.position); 
         Vector2 mouseOnScreen = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
-         
-        //Get the angle between the points
         float angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
- 
-        //Ta Daaa
         transform.rotation =  Quaternion.Euler (new Vector3(0f,-angle,0));
     }
  
