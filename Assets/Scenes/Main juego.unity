@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 149321899}
   - component: {fileID: 149321903}
   m_Layer: 0
-  m_Name: Sphere (11)
+  m_Name: Escala .6(3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -212,12 +212,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149321898}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.4, y: 0, z: 0.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 1.6599991, y: 7.9799995, z: -5.699996}
+  m_LocalScale: {x: 0.60000026, y: 0.6, z: 0.60000026}
   m_Children: []
-  m_Father: {fileID: 382884608}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &149321903
 MonoBehaviour:
@@ -228,12 +228,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 149321898}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a2b9fe12cf09fd45a5b1ec0bd1bac18, type: 3}
+  m_Script: {fileID: 11500000, guid: 88671d3fe6ba5c34ca67c2304311d6fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 1, g: 1, b: 1, a: 1}
   cubeenemigo: {fileID: 1444001198}
   ppunto: 0
+  Temp1: 0
   distancia: 0
 --- !u!1 &300063530
 GameObject:
@@ -248,9 +249,10 @@ GameObject:
   - component: {fileID: 300063532}
   - component: {fileID: 300063531}
   - component: {fileID: 300063535}
+  - component: {fileID: 300063536}
   m_Layer: 0
-  m_Name: Sphere (5)
-  m_TagString: Untagged
+  m_Name: Escala1 (3)
+  m_TagString: Escala 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -324,12 +326,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300063530}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.06, y: 0, z: 3.06}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 2, y: 7.9799995, z: -9.389999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2097466971}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &300063535
 MonoBehaviour:
@@ -338,7 +340,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300063530}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a2b9fe12cf09fd45a5b1ec0bd1bac18, type: 3}
   m_Name: 
@@ -346,6 +348,26 @@ MonoBehaviour:
   lineColor: {r: 1, g: 1, b: 1, a: 1}
   cubeenemigo: {fileID: 1444001198}
   ppunto: 0
+  contadormaximo: 0
+  randomrange: 0
+  timer: 0
+  distancia: 0
+--- !u!114 &300063536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300063530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338e7c1877739d24e86d848c6ca73d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineColor: {r: 1, g: 1, b: 1, a: 1}
+  cubeenemigo: {fileID: 1444001198}
+  ppunto: 0
+  Temp1: 0
   distancia: 0
 --- !u!1 &382884604
 GameObject:
@@ -361,7 +383,7 @@ GameObject:
   - component: {fileID: 382884605}
   - component: {fileID: 382884609}
   m_Layer: 0
-  m_Name: Escala .6
+  m_Name: Escala .6(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -436,14 +458,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382884604}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 2.13, y: -12.290001, z: -6.86}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
-  m_Children:
-  - {fileID: 669301207}
-  - {fileID: 149321902}
-  m_Father: {fileID: 1018206729}
-  m_RootOrder: 3
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 1.8400002, y: 7.9799995, z: -16.74}
+  m_LocalScale: {x: 0.60000014, y: 0.6, z: 0.60000014}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!114 &382884609
 MonoBehaviour:
@@ -454,12 +474,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 382884604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a2b9fe12cf09fd45a5b1ec0bd1bac18, type: 3}
+  m_Script: {fileID: 11500000, guid: 88671d3fe6ba5c34ca67c2304311d6fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 1, g: 1, b: 1, a: 1}
   cubeenemigo: {fileID: 1444001198}
   ppunto: 0
+  Temp1: 0
   distancia: 0
 --- !u!1 &416182363
 GameObject:
@@ -476,7 +497,7 @@ GameObject:
   - component: {fileID: 416182368}
   m_Layer: 0
   m_Name: Escala .8
-  m_TagString: Untagged
+  m_TagString: Escala.8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -550,14 +571,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416182363}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -1.47, y: -12.290001, z: 0.23}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
-  m_Children:
-  - {fileID: 1515773350}
-  - {fileID: 566914481}
-  m_Father: {fileID: 1018206729}
-  m_RootOrder: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -1.76, y: 7.9799995, z: -9.650001}
+  m_LocalScale: {x: 0.80000025, y: 0.8, z: 0.80000025}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!114 &416182368
 MonoBehaviour:
@@ -568,12 +587,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 416182363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a2b9fe12cf09fd45a5b1ec0bd1bac18, type: 3}
+  m_Script: {fileID: 11500000, guid: 3bc210b7c81572344943d426dece43ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 1, g: 1, b: 1, a: 1}
   cubeenemigo: {fileID: 1444001198}
   ppunto: 0
+  Temp1: 0
   distancia: 0
 --- !u!1 &554527073
 GameObject:
@@ -590,8 +610,8 @@ GameObject:
   - component: {fileID: 554527078}
   - component: {fileID: 554527079}
   m_Layer: 0
-  m_Name: Sphere (2)
-  m_TagString: Untagged
+  m_Name: Madre 2
+  m_TagString: Madre
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -665,12 +685,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554527073}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6250017, y: -0.14499998, z: 3.3800027}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 3.760007, y: 8.52, z: -16.900003}
+  m_LocalScale: {x: 2, y: 2, z: -2}
   m_Children: []
-  m_Father: {fileID: 1053937356}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &554527078
 MonoBehaviour:
@@ -687,6 +707,9 @@ MonoBehaviour:
   lineColor: {r: 1, g: 1, b: 1, a: 1}
   cubeenemigo: {fileID: 1444001198}
   ppunto: 0
+  contadormaximo: 0
+  randomrange: 0
+  timer: 0
   distancia: 0
 --- !u!114 &554527079
 MonoBehaviour:
@@ -700,6 +723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3edb6389f689ad54c8c8a8f85edbcc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Mother: {fileID: 554527073}
 --- !u!1 &566914477
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,8 +738,8 @@ GameObject:
   - component: {fileID: 566914478}
   - component: {fileID: 566914482}
   m_Layer: 0
-  m_Name: Sphere (8)
-  m_TagString: Untagged
+  m_Name: Scale .8(2)
+  m_TagString: Escala8(2)
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -789,12 +813,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566914477}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.07, y: 0, z: -9.04}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 5.472004, y: 7.9799995, z: -15.306002}
+  m_LocalScale: {x: 0.8000005, y: 0.8, z: 0.8000005}
   m_Children: []
-  m_Father: {fileID: 416182367}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &566914482
 MonoBehaviour:
@@ -805,12 +829,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 566914477}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a2b9fe12cf09fd45a5b1ec0bd1bac18, type: 3}
+  m_Script: {fileID: 11500000, guid: 3bc210b7c81572344943d426dece43ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 1, g: 1, b: 1, a: 1}
   cubeenemigo: {fileID: 1444001198}
   ppunto: 0
+  Temp1: 0
   distancia: 0
 --- !u!1 &620155440
 GameObject:
@@ -909,7 +934,7 @@ GameObject:
   - component: {fileID: 669301204}
   - component: {fileID: 669301208}
   m_Layer: 0
-  m_Name: Sphere (10)
+  m_Name: Escala .6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -984,12 +1009,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669301203}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.2, y: 0, z: 6.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -1.8800015, y: 7.9799995, z: -13.619999}
+  m_LocalScale: {x: 0.60000026, y: 0.6, z: 0.60000026}
   m_Children: []
-  m_Father: {fileID: 382884608}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &669301208
 MonoBehaviour:
@@ -1000,12 +1025,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 669301203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a2b9fe12cf09fd45a5b1ec0bd1bac18, type: 3}
+  m_Script: {fileID: 11500000, guid: 88671d3fe6ba5c34ca67c2304311d6fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 1, g: 1, b: 1, a: 1}
   cubeenemigo: {fileID: 1444001198}
   ppunto: 0
+  Temp1: 0
   distancia: 0
 --- !u!1 &1018206728
 GameObject:
@@ -1033,11 +1059,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.29, y: 20.27, z: -9.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1053937356}
-  - {fileID: 2097466971}
-  - {fileID: 416182367}
-  - {fileID: 382884608}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1057,7 +1079,7 @@ GameObject:
   - component: {fileID: 1053937358}
   m_Layer: 0
   m_Name: Madre
-  m_TagString: Untagged
+  m_TagString: Madre
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1131,14 +1153,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053937352}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -2.71, y: -11.46, z: -1.7699995}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -3, y: 8.81, z: -11.65}
   m_LocalScale: {x: 2, y: 2, z: -2}
-  m_Children:
-  - {fileID: 1393659121}
-  - {fileID: 554527077}
-  m_Father: {fileID: 1018206729}
-  m_RootOrder: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!114 &1053937357
 MonoBehaviour:
@@ -1155,6 +1175,9 @@ MonoBehaviour:
   lineColor: {r: 1, g: 1, b: 1, a: 1}
   cubeenemigo: {fileID: 1444001198}
   ppunto: 0
+  contadormaximo: 0
+  randomrange: 0
+  timer: 0
   distancia: 0
 --- !u!114 &1053937358
 MonoBehaviour:
@@ -1168,6 +1191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3edb6389f689ad54c8c8a8f85edbcc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Mother: {fileID: 1053937352}
 --- !u!1 &1310150700
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,9 +1205,10 @@ GameObject:
   - component: {fileID: 1310150702}
   - component: {fileID: 1310150701}
   - component: {fileID: 1310150705}
+  - component: {fileID: 1310150706}
   m_Layer: 0
-  m_Name: Sphere (4)
-  m_TagString: Untagged
+  m_Name: Escala1
+  m_TagString: Escala 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1257,12 +1282,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310150700}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.91, y: 0, z: 10.77}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -5.7100024, y: 7.9799995, z: -11.540002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2097466971}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1310150705
 MonoBehaviour:
@@ -1271,7 +1296,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310150700}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a2b9fe12cf09fd45a5b1ec0bd1bac18, type: 3}
   m_Name: 
@@ -1279,6 +1304,26 @@ MonoBehaviour:
   lineColor: {r: 1, g: 1, b: 1, a: 1}
   cubeenemigo: {fileID: 1444001198}
   ppunto: 0
+  contadormaximo: 0
+  randomrange: 0
+  timer: 0
+  distancia: 0
+--- !u!114 &1310150706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310150700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338e7c1877739d24e86d848c6ca73d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineColor: {r: 1, g: 1, b: 1, a: 1}
+  cubeenemigo: {fileID: 1444001198}
+  ppunto: 0
+  Temp1: 0
   distancia: 0
 --- !u!1 &1393659117
 GameObject:
@@ -1295,8 +1340,8 @@ GameObject:
   - component: {fileID: 1393659122}
   - component: {fileID: 1393659123}
   m_Layer: 0
-  m_Name: Sphere (1)
-  m_TagString: Untagged
+  m_Name: Madre 3
+  m_TagString: Madre
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1370,12 +1415,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393659117}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.1250007, y: -0.10000038, z: 3.380001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 3.7600026, y: 8.61, z: -7.3999968}
+  m_LocalScale: {x: 2, y: 2, z: -2}
   m_Children: []
-  m_Father: {fileID: 1053937356}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1393659122
 MonoBehaviour:
@@ -1392,6 +1437,9 @@ MonoBehaviour:
   lineColor: {r: 1, g: 1, b: 1, a: 1}
   cubeenemigo: {fileID: 1444001198}
   ppunto: 0
+  contadormaximo: 0
+  randomrange: 0
+  timer: 0
   distancia: 0
 --- !u!114 &1393659123
 MonoBehaviour:
@@ -1405,6 +1453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3edb6389f689ad54c8c8a8f85edbcc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Mother: {fileID: 1393659117}
 --- !u!1 &1444001198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,8 +1468,9 @@ GameObject:
   - component: {fileID: 1444001199}
   - component: {fileID: 1444001203}
   - component: {fileID: 1444001204}
+  - component: {fileID: 1444001205}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1500,7 +1550,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &1444001203
 MonoBehaviour:
@@ -1509,7 +1559,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444001198}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a2b9fe12cf09fd45a5b1ec0bd1bac18, type: 3}
   m_Name: 
@@ -1517,6 +1567,9 @@ MonoBehaviour:
   lineColor: {r: 1, g: 1, b: 1, a: 1}
   cubeenemigo: {fileID: 1053937352}
   ppunto: 0
+  contadormaximo: 0
+  randomrange: 0
+  timer: 0
   distancia: 0
 --- !u!114 &1444001204
 MonoBehaviour:
@@ -1531,6 +1584,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+--- !u!114 &1444001205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444001198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d861b1b463dc570488ec515fc7e2cefb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1515773346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,8 +1611,8 @@ GameObject:
   - component: {fileID: 1515773347}
   - component: {fileID: 1515773351}
   m_Layer: 0
-  m_Name: Sphere (7)
-  m_TagString: Untagged
+  m_Name: Scale .8 (3)
+  m_TagString: Escala8(3)
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1620,12 +1686,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515773346}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.7, y: 0, z: -10.09}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 6.312003, y: 7.9799995, z: -7.489999}
+  m_LocalScale: {x: 0.8000005, y: 0.8, z: 0.8000005}
   m_Children: []
-  m_Father: {fileID: 416182367}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1515773351
 MonoBehaviour:
@@ -1636,12 +1702,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1515773346}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a2b9fe12cf09fd45a5b1ec0bd1bac18, type: 3}
+  m_Script: {fileID: 11500000, guid: 3bc210b7c81572344943d426dece43ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lineColor: {r: 1, g: 1, b: 1, a: 1}
   cubeenemigo: {fileID: 1444001198}
   ppunto: 0
+  Temp1: 0
   distancia: 0
 --- !u!1 &1631971863
 GameObject:
@@ -1844,9 +1911,10 @@ GameObject:
   - component: {fileID: 2097466969}
   - component: {fileID: 2097466968}
   - component: {fileID: 2097466972}
+  - component: {fileID: 2097466973}
   m_Layer: 0
-  m_Name: Escala 1
-  m_TagString: Untagged
+  m_Name: Escala 1 (2)
+  m_TagString: Escala 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1920,14 +1988,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097466967}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 5.35, y: -12.290001, z: -8.57}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 5.06, y: 7.9799995, z: -18.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1310150704}
-  - {fileID: 300063534}
-  m_Father: {fileID: 1018206729}
-  m_RootOrder: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!114 &2097466972
 MonoBehaviour:
@@ -1936,7 +2002,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097466967}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a2b9fe12cf09fd45a5b1ec0bd1bac18, type: 3}
   m_Name: 
@@ -1944,4 +2010,24 @@ MonoBehaviour:
   lineColor: {r: 1, g: 1, b: 1, a: 1}
   cubeenemigo: {fileID: 1444001198}
   ppunto: 0
+  contadormaximo: 0
+  randomrange: 0
+  timer: 0
+  distancia: 0
+--- !u!114 &2097466973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097466967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338e7c1877739d24e86d848c6ca73d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineColor: {r: 1, g: 1, b: 1, a: 1}
+  cubeenemigo: {fileID: 1444001198}
+  ppunto: 0
+  Temp1: 0
   distancia: 0

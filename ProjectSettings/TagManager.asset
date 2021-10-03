@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Madre
+  - Escala 1
+  - Escala.8
+  - Escala.6
+  - Escala8(2)
+  - Escala8(3)
+  - Escala1(2)
+  - Escala1(3)
+  - Escala6(2)
+  - Escala6(3)
   layers:
   - Default
   - TransparentFX
