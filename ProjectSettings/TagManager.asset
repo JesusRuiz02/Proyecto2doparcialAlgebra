@@ -14,6 +14,7 @@ TagManager:
   - Escala1(3)
   - Escala6(2)
   - Escala6(3)
+  - Zonamuerte
   layers:
   - Default
   - TransparentFX

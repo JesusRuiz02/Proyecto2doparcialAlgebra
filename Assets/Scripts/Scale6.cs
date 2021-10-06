@@ -38,7 +38,7 @@ public class Scale6 : MonoBehaviour
 
         if (Temp1 >= 2)
         {
-            Debug.Log("Cambia de color a Rojo");
+            
             GetComponent<Renderer>().material.color = Color.red;
 
         }

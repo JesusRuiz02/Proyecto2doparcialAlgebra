@@ -33,19 +33,19 @@ public class Escala1 : MonoBehaviour
 
         if (Temp1 > 0)
         {
-            Debug.Log("Cambio a Amarillo");
+            
             GetComponent<Renderer>().material.color=Color.yellow;
         }
         
         if (Temp1>=4)//Condicion para que la pelota cambie de color
         {
-            Debug.Log("Cambia a Naranja");
+            
             GetComponent<Renderer>().material.color = Color.HSVToRGB(30, 100, 100);
         }
         
         if (Temp1>=6)
         {
-            Debug.Log("Cambia a Rojo");
+           
             GetComponent<Renderer>().material.color=Color.red;
             
         }

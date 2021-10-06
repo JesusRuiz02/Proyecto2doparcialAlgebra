@@ -32,12 +32,12 @@ public class Scale8 : MonoBehaviour
         
         if (Temp1>=0)//Condicion para que la pelota 1 cambie de color
         {
-            Debug.Log("Cambia de color a Naranja");
+            
             GetComponent<Renderer>().material.color = Color.HSVToRGB(30, 100, 100);
         }
         else if (Temp1>=2)
         {
-            Debug.Log("Cambia de color a Rojo");
+           
             GetComponent<Renderer>().material.color=Color.red;
             
         }
