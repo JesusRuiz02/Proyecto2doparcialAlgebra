@@ -6,7 +6,6 @@ using Random = UnityEngine.Random;
 
 public class Productopunto : MonoBehaviour
 {
-    private RotationMadre rotationMadre;
 
     public Color lineColor = Color.white;
     public GameObject cubeenemigo;
@@ -53,19 +52,7 @@ public class Productopunto : MonoBehaviour
          
     }
 
-    private void OnTriggerEnter(Collider MotherCollider)
-    {
-        Debug.Log("Entra");
-      
-          
-            if (ppunto>.8f)//Si el ppunto es menor a 8
-            {
-                Debug.Log("Game Over");//Pierdes
-                cubeenemigo.GetComponent<Renderer>().material.color=Color.red;
-                //Time.timeScale = 0;
-            };
-        
-    }
+   
 
    
 }
