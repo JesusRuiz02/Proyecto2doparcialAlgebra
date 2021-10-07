@@ -42,7 +42,7 @@ public class Movement : MonoBehaviour
         Vector2 positionOnScreen = Camera.main.WorldToViewportPoint (transform.position); 
         Vector2 mouseOnScreen = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
         float angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
-        transform.rotation =  Quaternion.Euler (new Vector3(180f,-angle,0));
+        transform.rotation =  Quaternion.Euler (new Vector3(0,-angle,0));
     }
  
         float AngleBetweenTwoPoints(Vector3 a, Vector3 b) 

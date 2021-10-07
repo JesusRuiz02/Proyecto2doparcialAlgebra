@@ -7,6 +7,8 @@ public class Scale8 : MonoBehaviour
     public Color lineColor = Color.white;
     public GameObject cubeenemigo;
     public float ppunto, Temp1;
+    public Material Orange;
+    public GameObject objective;
 
     public float distancia;
     // Start is called before the first frame update
@@ -30,15 +32,16 @@ public class Scale8 : MonoBehaviour
             }   
         }
         
-        if (Temp1>=0)//Condicion para que la pelota 1 cambie de color
+        if (Temp1>0)//Condicion para que la pelota 1 cambie de color
         {
             
-            GetComponent<Renderer>().material.color = Color.HSVToRGB(30, 100, 100);
+            GetComponent<Renderer>().material=Orange;
         }
-        else if (Temp1>=2)
+        else if (Temp1>=4)
         {
            
             GetComponent<Renderer>().material.color=Color.red;
+            Destroy(objective,1f);
             
         }
        

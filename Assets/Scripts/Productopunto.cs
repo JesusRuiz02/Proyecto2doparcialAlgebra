@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class Productopunto : MonoBehaviour
 {
-
+    
     public Color lineColor = Color.white;
     public GameObject cubeenemigo;
     public float ppunto;
@@ -14,10 +14,14 @@ public class Productopunto : MonoBehaviour
     public float randomrange;
     public float timer;
     public float distancia;
+
+    private AudioSource Aaaaa;
     // Start is called before the first frame update
     void Start()
     {
         timer = 0;
+        Aaaaa = gameObject.GetComponent<AudioSource>();
+        Aaaaa.volume = 0;
     }
 
     // Update is called once per frame
@@ -42,7 +46,17 @@ public class Productopunto : MonoBehaviour
                  contadormaximo = Random.Range(1, 3);//Reinicia limite
              }
 
-            
+             if (ppunto< -.8f)
+             {
+                // cubeenemigo.GetComponent<Renderer>().material.color = Color.red;
+                 Time.timeScale = 0;
+                     Aaaaa.volume = 1;
+
+             }
+             else
+             {
+                 Aaaaa.volume = 0;
+             }
 
          }
          

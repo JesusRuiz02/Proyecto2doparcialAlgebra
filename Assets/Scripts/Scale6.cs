@@ -7,6 +7,7 @@ public class Scale6 : MonoBehaviour
     public Color lineColor = Color.white;
     public GameObject cubeenemigo;
     public float ppunto, Temp1;
+    public GameObject objective;
   
     //  public GameObject Sphere2;
     // public GameObject Sphere3;
@@ -40,6 +41,7 @@ public class Scale6 : MonoBehaviour
         {
             
             GetComponent<Renderer>().material.color = Color.red;
+            Destroy(objective,1f);
 
         }
     }
